@@ -23,11 +23,11 @@ module.exports = {
     })
   ],
   resolve: {
+    extensions: ['.js', '.jsx'],
     alias: {
-      'react-dom': '@hot-loader/react-dom',
-      app: commonPaths.app
-    },
-    extensions: ['.js', '.jsx']
+      app: commonPaths.app,
+      'react-dom': '@hot-loader/react-dom'
+    }
   },
   module: {
     rules: [
@@ -36,27 +36,35 @@ module.exports = {
         exclude: /node_modules/,
         use: ['babel-loader', 'eslint-loader']
       },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+
+      {
+        test: /\.svg$/,
+        use: 'file-loader'
+      },
       {
         test: /\.png$/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              mimetype: 'image/png',
-              limit: 8192
-            }
-          }
-        ]
-      },
-      {
-        test: /\.jpg$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/jpg',
-              limit: 8192
+              mimetype: 'image/png'
             }
           }
         ]
