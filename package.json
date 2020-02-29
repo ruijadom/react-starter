@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --config webpack/webpack.config.dev.js",
     "build": "rimraf ./dist && NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
     "start:prod": "npx http-server dist",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@hot-loader/react-dom": "^16.12.0",
