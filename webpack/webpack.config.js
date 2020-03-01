@@ -9,7 +9,7 @@ module.exports = {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].js',
     path: commonPaths.outputPath,
-    publicPath: 'https://ruijadom.github.io/react-starter'
+    publicPath: commonPaths.publicPathHost
   },
   plugins: [
     new CopyWebpackPlugin([{ from: commonPaths.assetsFolder, to: 'assets' }]),

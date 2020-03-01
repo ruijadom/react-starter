@@ -2,7 +2,7 @@ import React from 'react';
 
 const App = () => (
   <>
-    <h2>variables works</h2>
+    <h2>variables works now 6</h2>
   </>
 );
 
