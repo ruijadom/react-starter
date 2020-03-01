@@ -1,4 +1,5 @@
-@import 'sass/tools/fonts';
+@import 'tools/fonts';
+@import 'tools/colors';
 
 $background-color: #ffffff;
 
@@ -9,7 +10,7 @@ body {
 }
 
 .app {
-  background: $background-color;
+  background: $brand-success;
   min-height: 100vh;
   flex-direction: column;
   display: flex;
