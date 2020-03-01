@@ -27,17 +27,35 @@ npm start
 ### Build Production
 
 ```
-yarn build or npm run build
+yarn build
+```
+
+or
+
+```
+npm run build
 ```
 
 ### Start Production for testing
 
 ```
-yarn start:prod or npm run start:prod
+yarn start:prod
+```
+
+or
+
+```
+npm run start:prod
 ```
 
 ### Deploy Production on Github Pages
 
 ```
-yarn deploy or npm run deploy
+yarn deploy
+```
+
+or
+
+```
+ npm run deploy
 ```
