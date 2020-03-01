@@ -3,13 +3,25 @@
 ## Installation
 
 ```
-yarn or npm install
+yarn
+```
+
+or
+
+```
+npm install
 ```
 
 ### Start Dev Server
 
 ```
-yarn start or npm start
+yarn start
+```
+
+or
+
+```
+npm start
 ```
 
 ### Build Production
