@@ -1,9 +1,11 @@
 import React from 'react';
 
 const App = () => (
-  <>
-    <h2>variables works now 6</h2>
-  </>
+  <div className="app">
+    <div className="app_content">
+      <h2>Content</h2>
+    </div>
+  </div>
 );
 
 export default App;

@@ -1,12 +1,19 @@
-$body-color: #fff;
+@import 'sass/tools/fonts';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+$background-color: #ffffff;
 
 html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Open Sans';
-  background: black;
-  color: $body-color;
+}
+
+.app {
+  background: $background-color;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  font-family: 'OpenSans-Regular', Fallback, sans-serif;
 }
