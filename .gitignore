@@ -7,7 +7,6 @@ yarn.lock
 .vscode
 
 # Production
-dist
 
 # General
 .DS_Store
