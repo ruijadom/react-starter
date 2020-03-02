@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.app {
+  background: $brand-color;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  font-family: 'OpenSans-Regular', Fallback, sans-serif;
+}
