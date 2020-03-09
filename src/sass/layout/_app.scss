@@ -2,15 +2,26 @@ html,
 body {
   height: 100%;
   width: 100%;
-  margin: 0px auto;
 }
 
 .app {
-  background: $brand-color;
-  min-height: 100vh;
-  flex-direction: column;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  font-family: 'OpenSans-Regular', Fallback, sans-serif;
+  background: $background-color;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app-content {
+  align-self: flex-start;
+  margin-top: 84px;
+  width: 520px;
+  background: $background-color;
+}
+
+.app-content-title {
+  font-family: $font-title;
+}
+
+.app-content-text {
+  font-family: $font-info;
 }
